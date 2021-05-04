@@ -1,58 +1,45 @@
-Project 1 - Custom Object Relational Mapping Framework
-Description
+# AnakinORM
+## Project Description
 
-Your first project will be to create a custom object relational mapping (ORM) framework. This framework will allow for a simplified and SQL-free interaction with the relational data source. The requires of the project are purposefully vague, the intention is to allow for you to be creative in your implementation of this framework. There are many ways that this task can be approached, and you are encouraged to explore existing Java ORM implementations in order to get some inspiration. Some suggested features that your ORM can provide are:
+AnakinORM is an application that allow users who has little to no experience with SQL to perform various tasks. That include creating a relational database
+with tables connected to one another. Users can also manage the data in the database, perform functions such as insert, delete, read and update. 
 
-    provide developers the option of file-based and/or programmatic configuration of entities
 
-    Programmatic persistence of entities (basic CRUD support)
+## Technologies Used
 
-    Basic transaction management (begin, commit, savepoint, rollback)
+   *Java SQL
+   *JDBC
+   *JUnit
+   *PostgreSQL
+   *Maven
+   *AWS RDS
+   *AWS EC2
+   *AWS CodeBuild
+   *AWS CodePipeline
+   *Elastic Beanstalk
+   *Mockito
+   *DevOps
+   *DBBeaver
+   *Git
+   *XML
 
-    Connection pooling
+## Features
 
-    Multithreading support for executing queries
+    Users can configure their models with annotation to let the program know they want each field to persist in the database. 
+    Users can perform persistence of entities which are the basic create, read, update and delete functions.
+    Application utilized connection pooling to reduce the amount of connections user would have to make each time connecting to database.
+    Multithreading support to minimize the time it takes for program to run.
+    Used hikari cache to reduce the nubmer of connections to the database when possible.
 
-Tech Stack
+## To-do list:
 
-    Java 8
-    JUnit
-    Apache Maven
-    PostGreSQL deployed on AWS RDS
-    Git SCM (on GitHub)
+    Refactor some of the code so it is more readable and documentation each functions with JavaDocs
 
-Init Instructions
+## Getting Started
 
-    Create a new repository within this organization (naming convention: orm_name_p1; with orm_name being replaced by the name of your custom library)
+git clone https://github.com/anakin115/AnakinORM_P1.git
 
-Presentation
-
-    finalized version of library must be pushed to personal repository within this organization by the presentation date (March 26th, 2021)
-    10-15 minute live demonstration of the implemented features using a demo application to showcase the ORM's functionality
-
-**Method within this ORM :**
-
-public int createTable(Object o)
-public int createTableFromClass(Class c)
-public int insertObject(Object o)
-
-public void viewAllDataByClass(Class c)
-public void viewDataByID(Class c,int id)
-public void viewDataByField(Class c,String field,int id)
-public void viewDataByField(Class c,String field,String str)
-
-public int updateObject(Object o, int id, String field, String str)
-public int updateObject(Object o, int id, String field, int num)
-public int updateObjectByClass(Class c, int id, String field, int num)
-public int updateObjectByClass(Class c, int id, String field, String str)
-
-public int deleteObjectByID(Class c, int num)
-public int deleteObjectByID(Object o, int num)
-public int deleteObjectByField(Object o, String field, String str)
-public int deleteObjectByField(Object o, String field, int num)
-
-public int dropTableByObject(Object o)
-public int dropTableByClass(Class c)
-
-public int transferIntFromObj1ToObj2(Class c,int obj1ID,int obj2ID,String field,int amount)
-    - if problem occur during transaction, it will rollback to before the transaction happen
+    1. Configure the properties file in the resource folder with the right database connnection.
+    2. Annotate models with the correct annotations.
+    3. Perform the functions you want with the correct method calls.
+    4. Enjoy!
