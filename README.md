@@ -7,21 +7,23 @@ with tables connected to one another. Users can also manage the data in the data
 
 ## Technologies Used
 
-   *Java SQL
-   *JDBC
-   *JUnit
-   *PostgreSQL
-   *Maven
-   *AWS RDS
-   *AWS EC2
-   *AWS CodeBuild
-   *AWS CodePipeline
-   *Elastic Beanstalk
-   *Mockito
-   *DevOps
-   *DBBeaver
-   *Git
-   *XML
+   * Java SQL
+   * JDBC
+   * JUnit
+   * PostgreSQL
+   * Maven
+   * AWS RDS
+   * AWS EC2
+   * AWS CodeBuild
+   * AWS CodePipeline
+   * Elastic Beanstalk
+   * Mockito
+   * DevOps
+   * DBBeaver
+   * Git
+   * XML
+   
+   
 
 ## Features
 
